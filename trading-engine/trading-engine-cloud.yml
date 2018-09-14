@@ -5,11 +5,26 @@ logging:
       pivotal:
         refarch: DEBUG
 
-spring.jpa.generate-ddl: true
-spring.jpa.hibernate:
-  ddl-auto: create-drop
-  naming:
-    physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-spring.jpa.show-sql: true
-spring.jpa.hibernate.use-new-id-generator-mappings: true
-spring.jpa.database-platform: org.hibernate.dialect.MySQL55Dialect
+#spring.jpa.generate-ddl: true
+#spring.jpa.hibernate:
+#  ddl-auto: create-drop
+#  naming:
+#    physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+#spring.jpa.show-sql: true
+#spring.jpa.hibernate.use-new-id-generator-mappings: true
+#spring.jpa.database-platform: org.hibernate.dialect.MySQL55Dialect
+#
+#
+#
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL55Dialect
+#
+#
+
+spring:
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
