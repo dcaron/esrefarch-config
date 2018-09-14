@@ -9,7 +9,10 @@ logging:
     org.hibernate.SQL: INFO
 
 spring.jpa.generate-ddl: true
-spring.jpa.hibernate.ddl-auto: create-drop
+spring.jpa.hibernate:
+  ddl-auto: create-drop
+  naming:
+    physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 spring.jpa.show-sql: true
 spring.jpa.hibernate.use-new-id-generator-mappings: true
-spring.jpa.database-platform: org.hibernate.dialect.MySQL55DBDialect
+spring.jpa.database-platform: org.hibernate.dialect.MySQL55Dialect
